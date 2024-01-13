@@ -46,20 +46,122 @@ main {
   align-items: center;
   justify-content: center;
 }
-.main-container {
-  border: 1px solid red;
-}
+
 .headline {
   font-size: 156px;
   font-weight: 900;
   color: #1ed760;
+  position: relative;
+  left: 225px;
+  padding-bottom: 40px;
 }
 .headline-first {
   position: relative;
   left: -2.5em;
 }
 
+.sub-headline {
+  color: #1ed760;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.button-area {
+  text-align: center;
+}
+
+.button-style {
+  cursor: pointer;
+  padding: 14px 32px;
+  background-color: #1ed760;
+  border-radius: 500px;
+  font-size: inherit;
+  color: #2941ab;
+  font-weight: 700;
+  border: none;
+}
+
+.button-style:hover {
+  transform: scale(1.1);
+  background-color: #2de26d;
+}
+
 footer {
   height: 530px;
   background-color: black;
+}
+
+footer .inner {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 80px 0 50px;
+  border: 1px solid red;
+}
+footer .inner .top {
+  display: flex;
+  justify-content: space-between;
+  height: 346px;
+}
+footer .inner .top .footer-menu {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .inner .top .footer-menu .column {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+footer .inner .top .footer-menu .column .title {
+  color: #919496;
+  font-weight: 900;
+  margin: 20px 0px;
+}
+footer .inner .top .footer-menu .column .footer-menu-item {
+  padding-bottom: 15px;
+  padding-top: 3px;
+  font-size: 16px;
+}
+footer .inner .top .sns {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .inner .top .sns .icon-wrap {
+  width: 54px;
+  height: 54px;
+  background-color: #222322;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .inner .top .sns .icon-wrap .icon {
+  font-size: 24px;
+}
+footer .inner .top .sns .icon-wrap:last-child {
+  margin-right: 0;
+}
+
+footer .inner .middle {
+  color: #919496;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+footer .inner .bottom {
+  color: #919496;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+footer .inner .bottom .bottom-list .bottom-item {
+  margin-right: 24px;
+  color: #919496;
+}
+footer .inner .bottom .bottom-list .bottom-item:last-child {
+  margin-right: 0;
 }
